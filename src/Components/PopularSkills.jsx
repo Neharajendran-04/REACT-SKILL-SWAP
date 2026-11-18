@@ -1,7 +1,58 @@
 import { NavLink } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
 import './PopularSkills.css'
 
 function PopularSkills() {
+    const skill1Ref = useRef(null)
+  const skill2Ref = useRef(null)
+  const skill3Ref = useRef(null)
+  const skill4Ref = useRef(null)
+  const skill5Ref = useRef(null)
+  const skill6Ref = useRef(null)
+
+  useEffect(() => {
+
+    const elements = [
+      skill1Ref.current,
+      skill2Ref.current,
+      skill3Ref.current,
+      skill4Ref.current,
+      skill5Ref.current,
+      skill6Ref.current
+    ]
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            observer.unobserve(entry.target)
+          }
+
+        })
+
+      },
+      {
+        threshold: 0.2
+      }
+    )
+
+    elements.forEach((element) => {
+
+      if (element) {
+        observer.observe(element)
+      }
+
+    })
+
+    return () => {
+      observer.disconnect()
+    }
+
+  }, [])
+
 
   return (
     <section className="skills-section">
@@ -36,8 +87,8 @@ function PopularSkills() {
 
           {/* Programming */}
           <div className="col-lg-4 col-md-6">
-            <div className="skill-card skill-card-large">
-
+            <div className="skill-card skill-card-large scroll-reveal" ref={skill1Ref}>
+              
               <div className="skill-card-top">
                 <span className="skill-number">
                   01
@@ -72,8 +123,8 @@ function PopularSkills() {
 
           {/* UI/UX */}
           <div className="col-lg-4 col-md-6">
-            <div className="skill-card skill-card-coral">
-
+            <div className="skill-card skill-card-coral scroll-reveal" ref={skill2Ref}>
+              
               <div className="skill-card-top">
                 <span className="skill-number">
                   02
@@ -108,8 +159,8 @@ function PopularSkills() {
 
           {/* Photography */}
           <div className="col-lg-4 col-md-6">
-            <div className="skill-card skill-card-sand">
-
+            <div className="skill-card skill-card-sand scroll-reveal"  ref={skill3Ref}>
+             
               <div className="skill-card-top">
                 <span className="skill-number">
                   03
@@ -144,8 +195,8 @@ function PopularSkills() {
 
           {/* Languages */}
           <div className="col-lg-4 col-md-6">
-            <div className="skill-card skill-card-light">
-
+            <div className="skill-card skill-card-light scroll-reveal" ref={skill4Ref}>
+              
               <div className="skill-card-top">
                 <span className="skill-number">
                   04
@@ -180,8 +231,8 @@ function PopularSkills() {
 
           {/* Music */}
           <div className="col-lg-4 col-md-6">
-            <div className="skill-card skill-card-teal">
-
+            <div className="skill-card skill-card-teal scroll-reveal" ref={skill5Ref}>
+               
               <div className="skill-card-top">
                 <span className="skill-number">
                   05
@@ -216,8 +267,8 @@ function PopularSkills() {
 
           {/* Business */}
           <div className="col-lg-4 col-md-6">
-            <div className="skill-card skill-card-outline">
-
+            <div className="skill-card skill-card-outline scroll-reveal" ref={skill6Ref}>
+             
               <div className="skill-card-top">
                 <span className="skill-number">
                   06

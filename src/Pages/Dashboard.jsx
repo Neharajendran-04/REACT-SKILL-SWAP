@@ -1,13 +1,18 @@
 import { NavLink } from 'react-router-dom'
+import DashboardSidebar from '../Components/DashboardSidebar'
 import './Dashboard.css'
 
 function Dashboard() {
   return (
+      <div className="dashboard-layout">
+         <DashboardSidebar />
+          <main className="dashboard-main">
     <section className="dashboard-section">
 
       <div className="container">
 
-        {/* Dashboard Header */}
+        {/* ================= HEADER ================= */}
+
         <div className="dashboard-header">
 
           <div>
@@ -20,105 +25,95 @@ function Dashboard() {
             </h1>
 
             <p className="dashboard-subtitle">
-              Here's what's happening with your skill swaps.
+              Here's what's happening with your skills and swaps.
             </p>
           </div>
 
           <NavLink
             to="/explore"
-            className="btn dashboard-explore-btn"
+            className="dashboard-main-btn"
           >
-            Explore Skills →
+            Explore Skills
+            <span>→</span>
           </NavLink>
 
         </div>
 
 
-        {/* Stats */}
-        <div className="row g-4 dashboard-stats">
+        {/* ================= OVERVIEW ================= */}
+
+        <div className="row g-3 dashboard-overview">
 
           <div className="col-md-4">
-            <div className="dashboard-stat">
+            <div className="overview-card">
 
-              <div className="stat-top">
-                <span className="stat-number-small">
-                  01
-                </span>
-
-                <span className="stat-symbol">
+              <div className="overview-top">
+                <span>01</span>
+                <span className="overview-icon">
                   ↗
                 </span>
               </div>
 
-              <span className="stat-label">
-                SKILLS I TEACH
-              </span>
+              <div className="overview-content">
+                <strong>3</strong>
 
-              <strong>
-                3
-              </strong>
-
-              <span className="stat-link">
-                View skills →
-              </span>
+                <div>
+                  <p>SKILLS I TEACH</p>
+                  <span>
+                    JavaScript, UI/UX, Excel
+                  </span>
+                </div>
+              </div>
 
             </div>
           </div>
 
 
           <div className="col-md-4">
-            <div className="dashboard-stat dashboard-stat-sand">
+            <div className="overview-card overview-sand">
 
-              <div className="stat-top">
-                <span className="stat-number-small">
-                  02
-                </span>
-
-                <span className="stat-symbol">
+              <div className="overview-top">
+                <span>02</span>
+                <span className="overview-icon">
                   +
                 </span>
               </div>
 
-              <span className="stat-label">
-                SKILLS I WANT
-              </span>
+              <div className="overview-content">
+                <strong>2</strong>
 
-              <strong>
-                2
-              </strong>
-
-              <span className="stat-link">
-                Find people →
-              </span>
+                <div>
+                  <p>SKILLS I WANT</p>
+                  <span>
+                    Photography, Guitar
+                  </span>
+                </div>
+              </div>
 
             </div>
           </div>
 
 
           <div className="col-md-4">
-            <div className="dashboard-stat dashboard-stat-accent">
+            <div className="overview-card overview-teal">
 
-              <div className="stat-top">
-                <span className="stat-number-small">
-                  03
-                </span>
-
-                <span className="stat-symbol">
+              <div className="overview-top">
+                <span>03</span>
+                <span className="overview-icon">
                   ↔
                 </span>
               </div>
 
-              <span className="stat-label">
-                PENDING REQUESTS
-              </span>
+              <div className="overview-content">
+                <strong>2</strong>
 
-              <strong>
-                2
-              </strong>
-
-              <span className="stat-link">
-                View requests →
-              </span>
+                <div>
+                  <p>PENDING REQUESTS</p>
+                  <span>
+                    Waiting for responses
+                  </span>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -126,18 +121,18 @@ function Dashboard() {
         </div>
 
 
-        {/* Main Dashboard */}
-        <div className="row g-4 dashboard-main">
+        {/* ================= MY SKILLS ================= */}
 
-          {/* My Skills */}
+        <div className="row g-4 dashboard-content">
+
           <div className="col-lg-7">
 
-            <div className="dashboard-card">
+            <div className="skills-panel">
 
-              <div className="dashboard-card-header">
+              <div className="panel-header">
 
                 <div>
-                  <p className="card-label">
+                  <p className="section-label">
                     MY SKILLS
                   </p>
 
@@ -153,22 +148,17 @@ function Dashboard() {
               </div>
 
 
-              <div className="my-skills-list">
+              <div className="skills-list">
 
-                <div className="my-skill">
+                <div className="skill-row">
 
-                  <div className="skill-icon">
+                  <div className="skill-symbol">
                     &lt;/&gt;
                   </div>
 
-                  <div>
-                    <h3>
-                      JavaScript
-                    </h3>
-
-                    <p>
-                      Web development
-                    </p>
+                  <div className="skill-details">
+                    <h3>JavaScript</h3>
+                    <p>Web development</p>
                   </div>
 
                   <span className="skill-level">
@@ -178,20 +168,15 @@ function Dashboard() {
                 </div>
 
 
-                <div className="my-skill">
+                <div className="skill-row">
 
-                  <div className="skill-icon skill-icon-coral">
+                  <div className="skill-symbol symbol-coral">
                     ✦
                   </div>
 
-                  <div>
-                    <h3>
-                      UI / UX Design
-                    </h3>
-
-                    <p>
-                      Figma & interface design
-                    </p>
+                  <div className="skill-details">
+                    <h3>UI / UX Design</h3>
+                    <p>Figma & interface design</p>
                   </div>
 
                   <span className="skill-level">
@@ -201,20 +186,15 @@ function Dashboard() {
                 </div>
 
 
-                <div className="my-skill">
+                <div className="skill-row">
 
-                  <div className="skill-icon skill-icon-sand">
+                  <div className="skill-symbol symbol-sand">
                     +
                   </div>
 
-                  <div>
-                    <h3>
-                      Excel
-                    </h3>
-
-                    <p>
-                      Spreadsheets & formulas
-                    </p>
+                  <div className="skill-details">
+                    <h3>Excel</h3>
+                    <p>Spreadsheets & formulas</p>
                   </div>
 
                   <span className="skill-level">
@@ -225,20 +205,29 @@ function Dashboard() {
 
               </div>
 
+
+              <NavLink
+                to="/profile"
+                className="add-skill-link"
+              >
+                + Add another skill
+              </NavLink>
+
             </div>
 
           </div>
 
 
-          {/* Want to Learn */}
+          {/* ================= WANT TO LEARN ================= */}
+
           <div className="col-lg-5">
 
-            <div className="dashboard-card learn-card">
+            <div className="learn-panel">
 
-              <div className="dashboard-card-header">
+              <div className="panel-header">
 
                 <div>
-                  <p className="card-label">
+                  <p className="section-label">
                     I WANT TO LEARN
                   </p>
 
@@ -250,31 +239,64 @@ function Dashboard() {
               </div>
 
 
-              <div className="learn-tags">
+              <div className="learn-list">
 
-                <span>
-                  Photography
-                </span>
+                <div className="learn-item">
+                  <span className="learn-number">
+                    01
+                  </span>
 
-                <span>
-                  Guitar
-                </span>
+                  <div>
+                    <h3>Photography</h3>
+                    <p>Creative</p>
+                  </div>
 
-                <span>
-                  Spanish
-                </span>
+                  <span className="learn-arrow">
+                    →
+                  </span>
+                </div>
 
-                <span>
-                  Public Speaking
-                </span>
+
+                <div className="learn-item">
+                  <span className="learn-number">
+                    02
+                  </span>
+
+                  <div>
+                    <h3>Guitar</h3>
+                    <p>Music</p>
+                  </div>
+
+                  <span className="learn-arrow">
+                    →
+                  </span>
+                </div>
+
+
+                <div className="learn-item">
+                  <span className="learn-number">
+                    03
+                  </span>
+
+                  <div>
+                    <h3>Spanish</h3>
+                    <p>Language</p>
+                  </div>
+
+                  <span className="learn-arrow">
+                    →
+                  </span>
+                </div>
 
               </div>
 
+
               <NavLink
                 to="/explore"
-                className="learn-link"
+                className="learn-btn"
               >
-                Find someone to teach you →
+                Find someone to teach you
+                <span>→</span>
               </NavLink>
 
             </div>
@@ -284,12 +306,13 @@ function Dashboard() {
         </div>
 
 
-        {/* Suggested People */}
-        <div className="dashboard-section-heading">
+        {/* ================= PEOPLE ================= */}
+
+        <div className="dashboard-heading">
 
           <div>
-            <p className="card-label">
-              POSSIBLE MATCHES
+            <p className="section-label">
+              DISCOVER
             </p>
 
             <h2>
@@ -306,12 +329,20 @@ function Dashboard() {
 
         <div className="row g-4">
 
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6">
 
             <div className="person-card">
 
-              <div className="person-avatar">
-                AS
+              <div className="person-header">
+
+                <div className="person-avatar">
+                  AS
+                </div>
+
+                <span>
+                  MATCH
+                </span>
+
               </div>
 
               <h3>
@@ -322,10 +353,23 @@ function Dashboard() {
                 Kochi, Kerala
               </p>
 
-              <div className="person-skills">
-                <span>Guitar</span>
-                <span>Music</span>
+
+              <div className="person-swap">
+
+                <div>
+                  <small>TEACHES</small>
+                  <strong>Guitar</strong>
+                </div>
+
+                <span>↔</span>
+
+                <div>
+                  <small>WANTS</small>
+                  <strong>JavaScript</strong>
+                </div>
+
               </div>
+
 
               <button className="person-btn">
                 View Profile →
@@ -336,12 +380,20 @@ function Dashboard() {
           </div>
 
 
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6">
 
-            <div className="person-card">
+            <div className="person-card person-coral">
 
-              <div className="person-avatar person-avatar-coral">
-                RM
+              <div className="person-header">
+
+                <div className="person-avatar avatar-coral">
+                  RM
+                </div>
+
+                <span>
+                  NEW
+                </span>
+
               </div>
 
               <h3>
@@ -352,10 +404,23 @@ function Dashboard() {
                 Bengaluru, India
               </p>
 
-              <div className="person-skills">
-                <span>Photography</span>
-                <span>Editing</span>
+
+              <div className="person-swap">
+
+                <div>
+                  <small>TEACHES</small>
+                  <strong>Photography</strong>
+                </div>
+
+                <span>↔</span>
+
+                <div>
+                  <small>WANTS</small>
+                  <strong>UI / UX</strong>
+                </div>
+
               </div>
+
 
               <button className="person-btn">
                 View Profile →
@@ -366,12 +431,20 @@ function Dashboard() {
           </div>
 
 
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6">
 
-            <div className="person-card">
+            <div className="person-card person-sand">
 
-              <div className="person-avatar person-avatar-sand">
-                KS
+              <div className="person-header">
+
+                <div className="person-avatar avatar-sand">
+                  KS
+                </div>
+
+                <span>
+                  MATCH
+                </span>
+
               </div>
 
               <h3>
@@ -382,10 +455,23 @@ function Dashboard() {
                 Mumbai, India
               </p>
 
-              <div className="person-skills">
-                <span>Spanish</span>
-                <span>Languages</span>
+
+              <div className="person-swap">
+
+                <div>
+                  <small>TEACHES</small>
+                  <strong>Spanish</strong>
+                </div>
+
+                <span>↔</span>
+
+                <div>
+                  <small>WANTS</small>
+                  <strong>Excel</strong>
+                </div>
+
               </div>
+
 
               <button className="person-btn">
                 View Profile →
@@ -398,11 +484,12 @@ function Dashboard() {
         </div>
 
 
-        {/* Recent Requests */}
-        <div className="dashboard-section-heading requests-heading">
+        {/* ================= REQUESTS ================= */}
+
+        <div className="dashboard-heading request-heading">
 
           <div>
-            <p className="card-label">
+            <p className="section-label">
               RECENT ACTIVITY
             </p>
 
@@ -418,7 +505,7 @@ function Dashboard() {
         </div>
 
 
-        <div className="requests-card">
+        <div className="requests-panel">
 
           <div className="request-row">
 
@@ -428,12 +515,18 @@ function Dashboard() {
 
             <div className="request-info">
               <h3>
-                Asha wants to swap skills
+                Asha Menon
               </h3>
 
               <p>
-                Guitar ↔ JavaScript
+                Wants to exchange skills with you
               </p>
+            </div>
+
+            <div className="request-swap">
+              <span>Guitar</span>
+              <strong>↔</strong>
+              <span>JavaScript</span>
             </div>
 
             <span className="request-status pending">
@@ -445,18 +538,24 @@ function Dashboard() {
 
           <div className="request-row">
 
-            <div className="request-avatar request-avatar-coral">
+            <div className="request-avatar avatar-coral">
               RM
             </div>
 
             <div className="request-info">
               <h3>
-                You sent Rahul a request
+                Rahul Mathew
               </h3>
 
               <p>
-                Photography ↔ UI / UX Design
+                Your swap request was accepted
               </p>
+            </div>
+
+            <div className="request-swap">
+              <span>Photography</span>
+              <strong>↔</strong>
+              <span>UI / UX</span>
             </div>
 
             <span className="request-status accepted">
@@ -470,6 +569,8 @@ function Dashboard() {
       </div>
 
     </section>
+    </main>
+    </div>
   )
 }
 
