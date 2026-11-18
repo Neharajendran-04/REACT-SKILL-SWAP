@@ -18,9 +18,6 @@
   background-color: #F9F7F2;
 }
 
-/* --------------------
-   HEADER
--------------------- */
 
 .requests-header {
   display: flex;
@@ -56,7 +53,6 @@
   color: #E58B73;
 }
 
-/* Summary */
 
 .request-summary {
   display: flex;
@@ -86,9 +82,6 @@
   font-weight: 600;
 }
 
-/* --------------------
-   TABS
--------------------- */
 
 .requests-tabs {
   display: flex;
@@ -152,9 +145,6 @@
   font-size: 0.6rem;
 }
 
-/* --------------------
-   REQUEST CARDS
--------------------- */
 
 .requests-list {
   display: flex;
@@ -186,7 +176,6 @@
   box-shadow: 0 8px 25px rgba(23, 76, 79, 0.07);
 }
 
-/* Person */
 
 .request-person {
   display: flex;
@@ -237,9 +226,6 @@
   font-size: 0.68rem;
 }
 
-/* --------------------
-   SWAP DETAILS
--------------------- */
 
 .swap-details {
   display: flex;
@@ -275,9 +261,6 @@
   font-size: 1.2rem;
 }
 
-/* --------------------
-   ACTIONS
--------------------- */
 
 .request-actions {
   display: flex;
@@ -327,9 +310,6 @@
   color: #174C4F;
 }
 
-/* --------------------
-   SENT SECTION
--------------------- */
 
 .sent-section {
   margin-top: 4rem;
@@ -357,9 +337,6 @@
   font-size: 1.25rem;
 }
 
-/* --------------------
-   SENT CARDS
--------------------- */
 
 .sent-card {
   display: grid;
@@ -444,9 +421,6 @@
   color: #174C4F;
 }
 
-/* --------------------
-   RESPONSIVE
--------------------- */
 
 @media (max-width: 991px) {
   .request-card {

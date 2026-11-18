@@ -10,11 +10,9 @@ function Explore() {
       <section className="explore-section">
         <div className="container">
 
-          {/* Page Header */}
           <div className="explore-header">
             <div>
               <p className="explore-label">DISCOVER SKILLS</p>
-
               <h1 className="explore-title">
                 Find something
                 <br />
@@ -37,7 +35,6 @@ function Explore() {
             </div>
           </div>
 
-          {/* Search + Filters */}
           <div className="explore-tools">
 
             <div className="explore-search">
@@ -77,7 +74,6 @@ function Explore() {
 
           </div>
 
-          {/* Results Header */}
           <div className="explore-results-header">
             <div>
               <p className="results-label">SKILL COMMUNITY</p>
@@ -89,10 +85,7 @@ function Explore() {
             </span>
           </div>
 
-          {/* People Grid */}
           <div className="row g-4">
-
-            {/* Person 1 */}
             <div className="col-md-6 col-xl-4">
               <div className="person-card">
 
@@ -139,7 +132,6 @@ function Explore() {
               </div>
             </div>
 
-            {/* Person 2 */}
             <div className="col-md-6 col-xl-4">
               <div className="person-card">
 
@@ -186,7 +178,6 @@ function Explore() {
               </div>
             </div>
 
-            {/* Person 3 */}
             <div className="col-md-6 col-xl-4">
               <div className="person-card">
 
@@ -232,8 +223,6 @@ function Explore() {
 
               </div>
             </div>
-
-            {/* Person 4 */}
             <div className="col-md-6 col-xl-4">
               <div className="person-card">
 
@@ -280,7 +269,6 @@ function Explore() {
               </div>
             </div>
 
-            {/* Person 5 */}
             <div className="col-md-6 col-xl-4">
               <div className="person-card">
 
@@ -327,7 +315,6 @@ function Explore() {
               </div>
             </div>
 
-            {/* Person 6 */}
             <div className="col-md-6 col-xl-4">
               <div className="person-card">
 

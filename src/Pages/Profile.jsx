@@ -13,7 +13,6 @@ function Profile() {
 
           <div className="container">
 
-            {/* Profile Header */}
             <div className="profile-header">
 
               <div className="profile-identity">
@@ -42,7 +41,6 @@ function Profile() {
 
             </div>
 
-            {/* About + Availability */}
             <div className="row g-4 profile-top-grid">
 
               <div className="col-lg-8">
@@ -83,7 +81,6 @@ function Profile() {
 
             </div>
 
-            {/* Skills */}
             <div className="row g-4 profile-skills-grid">
 
               <div className="col-lg-6">
@@ -204,7 +201,6 @@ function Profile() {
 
             </div>
 
-            {/* Bottom CTA */}
             <div className="profile-cta">
 
               <div>
