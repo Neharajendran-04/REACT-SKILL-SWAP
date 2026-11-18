@@ -1,0 +1,505 @@
+/* =========================
+   POPULAR SKILLS
+========================= */
+
+.skills-section {
+  background-color: #F9F7F2;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.skills-heading {
+  margin-bottom: 3.5rem;
+}
+
+.skills-label {
+  color: #E58B73;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+
+  margin-bottom: 1rem;
+}
+
+.skills-title {
+  color: #174C4F;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+
+  line-height: 1;
+  letter-spacing: -2px;
+
+  margin: 0;
+}
+
+.skills-title span {
+  color: #E58B73;
+}
+
+.skills-subtitle {
+  max-width: 430px;
+
+  margin: 0 0 0 auto;
+
+  color: #5C6666;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   SKILL GRID
+========================= */
+
+.skills-grid {
+  position: relative;
+}
+
+
+/* =========================
+   BASE CARD
+========================= */
+
+.skill-card {
+  position: relative;
+
+  height: 100%;
+  min-height: 310px;
+
+  padding: 1.75rem;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 18px 35px rgba(23, 76, 79, 0.12);
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.skill-card-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+}
+
+.skill-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.skill-arrow {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 1.1rem;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.skill-card:hover .skill-arrow {
+  transform: rotate(45deg);
+}
+
+
+/* =========================
+   SYMBOL
+========================= */
+
+.skill-symbol {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1.5rem;
+
+  border-radius: 16px;
+
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.skill-card h3 {
+  margin: 0 0 0.65rem;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.skill-card p {
+  max-width: 310px;
+
+  margin: 0;
+
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TAGS
+========================= */
+
+.skill-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.45rem;
+
+  margin-top: 1.5rem;
+}
+
+.skill-tags span {
+  padding: 0.35rem 0.7rem;
+
+  border-radius: 999px;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+
+/* =========================
+   TEAL CARD
+========================= */
+
+.skill-card-large {
+  background-color: #174C4F;
+  color: #F9F7F2;
+}
+
+.skill-card-large .skill-number {
+  color: #E58B73;
+}
+
+.skill-card-large .skill-arrow {
+  background-color: #E58B73;
+  color: #174C4F;
+}
+
+.skill-card-large .skill-symbol {
+  background-color: #F3E7D3;
+  color: #174C4F;
+}
+
+.skill-card-large p {
+  color: #CFE0DD;
+}
+
+.skill-card-large .skill-tags span {
+  background-color: rgba(249, 247, 242, 0.12);
+  color: #F9F7F2;
+}
+
+
+/* =========================
+   CORAL CARD
+========================= */
+
+.skill-card-coral {
+  background-color: #E58B73;
+  color: #174C4F;
+}
+
+.skill-card-coral .skill-number {
+  color: #174C4F;
+}
+
+.skill-card-coral .skill-arrow {
+  background-color: #174C4F;
+  color: #F9F7F2;
+}
+
+.skill-card-coral .skill-symbol {
+  background-color: #F9F7F2;
+  color: #174C4F;
+}
+
+.skill-card-coral p {
+  color: #174C4F;
+}
+
+.skill-card-coral .skill-tags span {
+  background-color: rgba(23, 76, 79, 0.12);
+  color: #174C4F;
+}
+
+
+/* =========================
+   SAND CARD
+========================= */
+
+.skill-card-sand {
+  background-color: #F3E7D3;
+  color: #174C4F;
+}
+
+.skill-card-sand .skill-number {
+  color: #E58B73;
+}
+
+.skill-card-sand .skill-arrow {
+  background-color: #174C4F;
+  color: #F9F7F2;
+}
+
+.skill-card-sand .skill-symbol {
+  background-color: #E58B73;
+  color: #174C4F;
+}
+
+.skill-card-sand p {
+  color: #5C6666;
+}
+
+.skill-card-sand .skill-tags span {
+  background-color: rgba(23, 76, 79, 0.08);
+  color: #174C4F;
+}
+
+
+/* =========================
+   LIGHT CARD
+========================= */
+
+.skill-card-light {
+  background-color: #FFFFFF;
+  color: #174C4F;
+
+  border: 1px solid #F3E7D3;
+}
+
+.skill-card-light .skill-number {
+  color: #E58B73;
+}
+
+.skill-card-light .skill-arrow {
+  background-color: #F3E7D3;
+  color: #174C4F;
+}
+
+.skill-card-light .skill-symbol {
+  background-color: #F3E7D3;
+  color: #174C4F;
+}
+
+.skill-card-light p {
+  color: #5C6666;
+}
+
+.skill-card-light .skill-tags span {
+  background-color: #F3E7D3;
+  color: #174C4F;
+}
+
+
+/* =========================
+   TEAL SECONDARY CARD
+========================= */
+
+.skill-card-teal {
+  background-color: #174C4F;
+  color: #F9F7F2;
+}
+
+.skill-card-teal .skill-number {
+  color: #E58B73;
+}
+
+.skill-card-teal .skill-arrow {
+  background-color: #F9F7F2;
+  color: #174C4F;
+}
+
+.skill-card-teal .skill-symbol {
+  background-color: #E58B73;
+  color: #174C4F;
+}
+
+.skill-card-teal p {
+  color: #CFE0DD;
+}
+
+.skill-card-teal .skill-tags span {
+  background-color: rgba(249, 247, 242, 0.12);
+  color: #F9F7F2;
+}
+
+
+/* =========================
+   OUTLINE CARD
+========================= */
+
+.skill-card-outline {
+  background-color: transparent;
+  color: #174C4F;
+
+  border: 2px solid #174C4F;
+}
+
+.skill-card-outline .skill-number {
+  color: #E58B73;
+}
+
+.skill-card-outline .skill-arrow {
+  background-color: #174C4F;
+  color: #F9F7F2;
+}
+
+.skill-card-outline .skill-symbol {
+  background-color: #E58B73;
+  color: #174C4F;
+}
+
+.skill-card-outline p {
+  color: #5C6666;
+}
+
+.skill-card-outline .skill-tags span {
+  background-color: #F3E7D3;
+  color: #174C4F;
+}
+
+
+/* =========================
+   BOTTOM CTA
+========================= */
+
+.skills-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.75rem;
+
+  margin-top: 3.5rem;
+}
+
+.skills-footer p {
+  margin: 0;
+
+  color: #5C6666;
+
+  font-size: 0.9rem;
+}
+
+.skills-link {
+  color: #174C4F;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  border-bottom: 2px solid #E58B73;
+
+  padding-bottom: 2px;
+}
+
+.skills-link span {
+  color: #E58B73;
+
+  margin-left: 0.25rem;
+
+  transition: margin-left 0.2s ease;
+}
+
+.skills-link:hover span {
+  margin-left: 0.5rem;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+  .skills-section {
+    padding: 5rem 0;
+  }
+
+  .skills-heading {
+    margin-bottom: 3rem;
+  }
+
+  .skills-subtitle {
+    margin: 1.5rem 0 0;
+  }
+
+  .skill-card {
+    min-height: 290px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+  .skills-section {
+    padding: 4rem 0;
+  }
+
+  .skills-title {
+    font-size: 2.7rem;
+  }
+
+  .skill-card {
+    min-height: auto;
+  }
+
+  .skills-footer {
+    flex-direction: column;
+
+    gap: 0.5rem;
+  }
+
+}

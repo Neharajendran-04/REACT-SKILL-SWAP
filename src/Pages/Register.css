@@ -1,0 +1,225 @@
+.register-section {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  background-color: #F9F7F2;
+  overflow: hidden;
+}
+
+/* Left Content */
+
+.register-intro {
+  max-width: 500px;
+}
+
+.register-label {
+  margin-bottom: 1rem;
+  color: #E58B73;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.register-title {
+  margin: 0;
+  color: #174C4F;
+  font-size: clamp(2.7rem, 5vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.register-title span {
+  color: #E58B73;
+}
+
+.register-text {
+  max-width: 450px;
+  margin: 1.5rem 0 0;
+  color: #5C6666;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Points */
+
+.register-points {
+  margin-top: 2.5rem;
+}
+
+.register-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(23, 76, 79, 0.12);
+}
+
+.register-point:first-child {
+  border-top: 1px solid rgba(23, 76, 79, 0.12);
+}
+
+.register-point span {
+  color: #E58B73;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.register-point p {
+  margin: 0;
+  color: #174C4F;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+/* Register Card */
+
+.register-card {
+  max-width: 480px;
+  margin-left: auto;
+  padding: 2.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #F3E7D3;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(23, 76, 79, 0.08);
+}
+
+.register-card-header {
+  margin-bottom: 2rem;
+}
+
+.register-card-label {
+  margin-bottom: 0.5rem;
+  color: #E58B73;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.register-card-header h2 {
+  margin: 0;
+  color: #174C4F;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.register-card-header p:last-child {
+  margin: 0.4rem 0 0;
+  color: #6B7473;
+  font-size: 0.9rem;
+}
+
+
+/* Form */
+
+.form-label {
+  margin-bottom: 0.5rem;
+  color: #174C4F;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.skill-input {
+  min-height: 48px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #D8D4CA;
+  border-radius: 8px;
+  color: #174C4F;
+  font-size: 0.9rem;
+  background-color: #F9F7F2;
+}
+
+.skill-input::placeholder {
+  color: #9A9F9D;
+}
+
+.skill-input:focus {
+  border-color: #E58B73;
+  box-shadow: 0 0 0 3px rgba(229, 139, 115, 0.15);
+  background-color: #FFFFFF;
+}
+
+
+/* Button */
+
+.register-btn {
+  min-height: 50px;
+  background-color: #174C4F;
+  border: 2px solid #174C4F;
+  border-radius: 8px;
+  color: #F9F7F2;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.register-btn:hover {
+  background-color: #E58B73;
+  border-color: #E58B73;
+  color: #174C4F;
+}
+
+
+/* Login Link */
+
+.register-login {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+  color: #6B7473;
+  font-size: 0.85rem;
+}
+
+.register-login a {
+  color: #174C4F;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-login a:hover {
+  color: #E58B73;
+}
+
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .register-section {
+    padding: 4rem 0;
+  }
+
+  .register-intro {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .register-card {
+    margin: 0 auto;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .register-section {
+    padding: 3rem 0;
+  }
+
+  .register-title {
+    font-size: 2.7rem;
+  }
+
+  .register-card {
+    padding: 1.75rem;
+    border-radius: 16px;
+  }
+
+  .register-card-header h2 {
+    font-size: 1.7rem;
+  }
+}

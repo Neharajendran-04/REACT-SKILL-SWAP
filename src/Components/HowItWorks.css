@@ -1,0 +1,377 @@
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-section {
+  position: relative;
+
+  padding: 5rem 0 5.5rem;
+
+  background-color: #E58B73;
+  color: #174C4F;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   DECORATIVE RING
+========================= */
+
+.how-ring {
+  position: absolute;
+
+  top: -70px;
+  right: -70px;
+
+  width: 260px;
+  height: 260px;
+
+  border: 2px dashed #174C4F;
+  border-radius: 50%;
+
+  opacity: 0.35;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.how-label {
+  color: #174C4F;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+
+  margin-bottom: 1rem;
+}
+
+.how-title {
+  margin: 0;
+
+  color: #174C4F;
+
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 700;
+
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+}
+
+.how-title span {
+  color: #F9F7F2;
+}
+
+.how-sub {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: #174C4F;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   TICKET GRID
+========================= */
+
+.how-steps {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1.5rem;
+
+  align-items: start;
+
+  margin-top: 3.5rem;
+}
+
+
+/* =========================
+   TICKET
+========================= */
+
+.how-ticket {
+  position: relative;
+
+  background-color: #174C4F;
+  color: #F9F7F2;
+
+  border-radius: 20px;
+
+  padding: 1.75rem 1.5rem 1.25rem;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.how-ticket:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 14px 30px rgba(23, 76, 79, 0.22);
+}
+
+
+/* =========================
+   STAIRCASE
+========================= */
+
+.how-ticket:nth-child(1) {
+  margin-top: 6rem;
+}
+
+.how-ticket:nth-child(2) {
+  margin-top: 4rem;
+}
+
+.how-ticket:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.how-ticket:nth-child(4) {
+  margin-top: 0;
+}
+
+
+/* =========================
+   NUMBER
+========================= */
+
+.how-num {
+  margin-bottom: 0.75rem;
+
+  color: transparent;
+
+  font-size: 3.6rem;
+  font-weight: 700;
+
+  line-height: 1;
+
+  -webkit-text-stroke: 2px #E58B73;
+}
+
+
+/* =========================
+   TICKET CONTENT
+========================= */
+
+.how-ticket h3 {
+  margin: 0 0 0.5rem;
+
+  color: #F9F7F2;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.how-ticket p {
+  margin: 0;
+
+  color: #CFE0DD;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   PERFORATED LINE
+========================= */
+
+.how-perf {
+  position: relative;
+
+  margin: 1.5rem -1.5rem 1rem;
+
+  border-top: 2px dashed rgba(249, 247, 242, 0.35);
+}
+
+.how-perf::before,
+.how-perf::after {
+  content: "";
+
+  position: absolute;
+
+  top: -13px;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
+  background-color: #E58B73;
+}
+
+.how-perf::before {
+  left: -12px;
+}
+
+.how-perf::after {
+  right: -12px;
+}
+
+
+/* =========================
+   TICKET STUB
+========================= */
+
+.how-stub {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  color: #F9F7F2;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.how-stub span:last-child {
+  color: #E58B73;
+
+  font-size: 1rem;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.how-cta {
+  margin-top: 3.5rem;
+
+  text-align: center;
+}
+
+.how-btn {
+  display: inline-block;
+
+  padding: 0.85rem 1.75rem;
+
+  background-color: #174C4F;
+  border: 2px solid #174C4F;
+
+  border-radius: 8px;
+
+  color: #F9F7F2;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.how-btn:hover {
+  background-color: #F9F7F2;
+  border-color: #F9F7F2;
+
+  color: #174C4F;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+  .how-section {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .how-steps {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+  }
+
+  .how-ticket:nth-child(n) {
+    margin-top: 0;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+  .how-section {
+    padding: 4rem 0;
+  }
+
+  .how-title {
+    font-size: 2.2rem;
+  }
+
+  .how-sub {
+    font-size: 0.95rem;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+
+    margin-top: 2.5rem;
+  }
+
+  .how-ticket:nth-child(n) {
+    margin-top: 0;
+  }
+
+  .how-num {
+    font-size: 3rem;
+  }
+
+}
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.how-ticket:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.how-ticket:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.how-ticket:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.how-ticket:nth-child(4) {
+  transition-delay: 0.85s;
+}
